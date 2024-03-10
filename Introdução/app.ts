@@ -1,5 +1,29 @@
-let b: string = 'b'
-let n: number = 2
-let x: boolean = true
+interface Pessoa {
+    nome: string,
+    idade: number
+    profissao?: string
+}
 
-let m: string | number = 2
+const pessoa: Pessoa = {
+    nome: 'Marllon',
+    idade: 19
+}
+
+const outraPessoa: Pessoa = {
+    nome: 'Paulo',
+    idade: 25,
+    profissao: 'Desenvolvedor'
+}
+
+const arrayPessoa: Array<Pessoa> = [
+    pessoa,
+    outraPessoa
+]
+
+const arrayNum: number[] = [
+    1, 2, 3
+]
+
+const arrayString: Array<String> = [
+    '1', '2', '3'
+]
